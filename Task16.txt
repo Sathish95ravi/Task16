@@ -1,0 +1,122 @@
+
+
+
+1.Selenium Firefox Driver Script:-
+
+package firstproject;
+
+
+
+import org.openqa.selenium.WebDriver;
+
+
+
+import org.openqa.selenium.firebox.FireboxDriver;
+
+
+
+public class SimpleScript 
+{
+
+
+
+public static void main(String[] args)
+ {
+
+
+WebDriver driver=new FireboxDriver();
+
+
+
+driver.get("https://www.google.com/");
+
+
+
+driver.manage().window().maximize();
+
+
+Thread.sleep(5000);
+
+
+driver.close();
+
+
+}
+
+
+}
+
+
+
+
+2.Script using Chrome Browser:-
+
+package firstproject;
+
+import org.openqa.selenium.WebDriver;
+
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class SimpleScript {
+
+public static void main(String[] args) {
+
+//launch the browser
+
+WebDriver driver=new ChromeDriver();
+
+//loading the url
+
+driver.get("https://www.demoblaze.com/");
+
+// To maximize the browser
+
+driver.manage().window().maximize();
+
+if(titleofRequiredList.getText().contains("STORE"){
+
+System.out.println("Page landed on correct wesite");
+}else{
+System.out.println("Page not landed on correct wesite");
+}
+//Close the browser
+
+driver.close();
+
+}
+
+}
+
+3.Wikipedia:-
+  
+
+package firstproject;
+
+import org.openqa.selenium.WebDriver;
+
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class SimpleScript {
+
+public static void main(String[] args) {
+
+//launch the browser
+
+WebDriver driver=new ChromeDriver();
+
+//loading the url
+
+driver.get("https://www.wikipedia.org/");
+
+// To maximize the browser
+
+driver.manage().window().maximize();
+
+driver.findElementByLinkText("History");
+//Close the browser
+
+driver.close();
+
+}
+
+}
